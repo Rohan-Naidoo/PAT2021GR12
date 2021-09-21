@@ -1,0 +1,108 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 395
+  ClientWidth = 668
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  OnHide = FormHide
+  DesignerMasterStyle = 0
+  object sclayLogin: TScaledLayout
+    OriginalWidth = 657.000000000000000000
+    OriginalHeight = 377.000000000000000000
+    Size.Width = 657.000000000000000000
+    Size.Height = 377.000000000000000000
+    Size.PlatformDefault = False
+    object lblAdMod: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 178.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 287.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblAdMod'
+      TabOrder = 1
+    end
+    object rectUSPA: TRectangle
+      Fill.Color = xFF141414
+      Position.X = 172.000000000000000000
+      Position.Y = 188.000000000000000000
+      Size.Width = 301.000000000000000000
+      Size.Height = 93.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFD40000
+      ParentShowHint = False
+      ShowHint = True
+      object lblUserName: TLabel
+        StyledSettings = []
+        Position.X = 11.000000000000000000
+        Position.Y = -6.000000000000000000
+        Size.Width = 199.000000000000000000
+        Size.Height = 59.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000100000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Username'
+        TabOrder = 2
+      end
+      object lblPassword: TLabel
+        StyledSettings = []
+        Position.X = 11.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000100000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Password'
+        TabOrder = 0
+      end
+      object Rectangle8: TRectangle
+        Fill.Color = claNull
+        Position.X = 126.000000000000000000
+        Position.Y = 44.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFD40000
+        object edtPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 0
+          Password = True
+          Text = 'Discovery Inc.'
+          TextSettings.FontColor = claWhite
+          Position.X = 5.000000000000000000
+          Position.Y = 1.000000000000000000
+          StyledSettings = [Family, Size, Style]
+        end
+      end
+      object Rectangle9: TRectangle
+        Fill.Color = claNull
+        Position.X = 126.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFD40000
+        object edtUsername: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 0
+          Text = 'admnScdra$32&%'
+          TextSettings.FontColor = claWhite
+          StyledSettings = [Family, Size, Style]
+        end
+      end
+    end
+  end
+end
