@@ -1,0 +1,109 @@
+object frmBackground: TfrmBackground
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 543
+  ClientWidth = 826
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 377.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    OnMouseDown = rectToolbarMouseDown
+    OnMouseUp = rectToolbarMouseUp
+    object rectClose: TRectangle
+      Position.X = 241.000000000000000000
+      Position.Y = 17.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = rectCloseClick
+      object imgClose: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = imgCloseClick
+        OnMouseEnter = imgCloseMouseEnter
+        OnMouseLeave = imgCloseMouseLeave
+      end
+    end
+    object rectMaxRes: TRectangle
+      Position.X = 142.000000000000000000
+      Position.Y = 17.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = rectMaxResClick
+      object imgMaxRes: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        OnClick = imgMaxResClick
+        OnMouseEnter = imgMaxResMouseEnter
+        OnMouseLeave = imgMaxResMouseLeave
+      end
+    end
+    object rectMin: TRectangle
+      Position.X = 40.000000000000000000
+      Position.Y = 17.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = rectMinClick
+      object imgMin: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 15.000000000000000000
+        Position.Y = 16.000000000000000000
+        OnClick = imgMinClick
+        OnMouseEnter = imgMinMouseEnter
+        OnMouseLeave = imgMinMouseLeave
+      end
+    end
+  end
+  object tmrCircles: TTimer
+    OnTimer = tmrCirclesTimer
+    Left = 464
+    Top = 80
+  end
+  object rectDarkMode: TRectangle
+    Fill.Color = xFFFFF200
+    Hint = 'Toggle Dark Mode'
+    Position.X = 18.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFD40000
+    XRadius = 15.000000000000000000
+    YRadius = 15.000000000000000000
+    OnClick = rectDarkModeClick
+    object imgDark: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Position.X = 15.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = imgDarkClick
+    end
+  end
+end

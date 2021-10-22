@@ -1,0 +1,137 @@
+object frmHome: TfrmHome
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 654
+  ClientWidth = 933
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  OnHide = FormHide
+  DesignerMasterStyle = 0
+  object imgLogo: TImage
+    MultiResBitmap = <
+      item
+      end>
+    MarginWrapMode = Fit
+    Position.X = 392.000000000000000000
+    Position.Y = 72.000000000000000000
+  end
+  object floatAniLogo: TFloatAnimation
+    Duration = 0.200000002980232200
+    OnFinish = floatAniLogoFinish
+    StartValue = 0.000000000000000000
+    StopValue = 0.000000000000000000
+  end
+  object sclayHome: TScaledLayout
+    OriginalWidth = 865.000000000000000000
+    OriginalHeight = 545.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 865.000000000000000000
+    Size.Height = 545.000000000000000000
+    Size.PlatformDefault = False
+    OnResize = sclayHomeResize
+    object imgSponsor: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Hint = 'Sponsor a driver'
+      Position.X = 592.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = imgSponsorClick
+    end
+    object imgView: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Hint = 'View all drivers part of our programs'
+      Position.X = 592.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = imgViewClick
+    end
+    object imgStatus: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Hint = 'view your application status'
+      Position.X = 592.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 150.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = imgStatusClick
+    end
+    object rectLogin: TRectangle
+      Fill.Color = claNull
+      Position.X = 336.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF008C45
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      OnClick = rectLoginClick
+      object lblLogin: TLabel
+        Align = Center
+        StyledSettings = []
+        Size.Width = 137.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Login as Admin or Moderator'
+        TabOrder = 0
+        OnClick = lblLoginClick
+      end
+    end
+    object rectManage: TRectangle
+      Fill.Color = claNull
+      Position.X = 336.000000000000000000
+      Position.Y = 264.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF008C45
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      OnClick = rectManageClick
+      object lblManageDrivers: TLabel
+        Align = Center
+        StyledSettings = []
+        Size.Width = 113.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Century Gothic'
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'ManageDrivers'
+        TabOrder = 0
+        OnClick = lblManageDriversClick
+      end
+    end
+  end
+  object lblWelcome: TLabel
+    Position.X = 406.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Welcome'
+    TabOrder = 0
+  end
+end
